@@ -1,0 +1,84 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^arrs.net [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.arrs.net [NC]
+RewriteRule ^(.*)$ https://arrs.run/$1 [L,R=301,NC]
+
+
+Redirect 301 /ACRec.htm https://www.arrs.run/all_comers_records.php
+Redirect 301 /ADR_Crit.htm https://www.arrs.run/inclusion_criteria.php
+Redirect 301 /AR_ED940.htm https://www.arrs.run/article_iaaf.php
+Redirect 301 /AR_Equality.htm https://www.arrs.run/article_equalityforwomen.php
+Redirect 301 /AR_Himalaya.htm https://www.arrs.run/article_himalaya.php
+Redirect 301 /AR_Hour.htm https://www.arrs.run/article_onehour.php
+Redirect 301 /AR_MarathonOrigins.htm https://www.arrs.run/article_marathonorigins.php
+Redirect 301 /AR_Pheid.htm https://www.arrs.run/article_pheidippides.php
+Redirect 301 /AR_Pioneer.htm https://www.arrs.run/article_pioneer.php
+Redirect 301 /AR_TrailGPS.htm https://www.arrs.run/article_trailgps.php
+Redirect 301 /AR_Wind.htm https://www.arrs.run/article_wind.php
+Redirect 301 /ARRS_ESP.htm https://www.arrs.run/arrs_introduction_spanish.php
+Redirect 301 /ARRS_FRA.htm https://www.arrs.run/arrs_introduction_french.php
+Redirect 301 /ARRS_GER.htm https://www.arrs.run/arrs_introduction_german.php
+Redirect 301 /ARRS_ITA.htm https://www.arrs.run/arrs_introduction_italian.php
+Redirect 301 /ARRS_LAT.htm https://www.arrs.run/arrs_introduction_latvian.php
+Redirect 301 /ARRS_MLT.htm https://www.arrs.run/arrs_introduction_maltese.php
+Redirect 301 /ARRS_NED.htm https://www.arrs.run/arrs_introduction_dutch.php
+Redirect 301 /ARRS_POL.htm https://www.arrs.run/arrs_introduction_polish.php
+Redirect 301 /ARRS_POR.htm https://www.arrs.run/arrs_introduction_portuguese.php
+Redirect 301 /ARRS_SVK.htm https://www.arrs.run/arrs_introduction_slovak.php
+Redirect 301 /ARRS_SWE.htm https://www.arrs.run/arrs_introduction_swedish.php
+Redirect 301 /ARRS_TUR.htm https://www.arrs.run/arrs_introduction_turkish.php
+Redirect 301 /Articles.htm https://www.arrs.run/articles_english.php
+
+Redirect 301 /BestTime.htm https://www.arrs.run/best_time_for_place.php
+Redirect 301 /Bio_ARRS.htm https://www.arrs.run/arrs_bio_english.php
+
+Redirect 301 /Cheats.htm https://www.arrs.run/blacklisted.php
+
+Redirect 301 /IAAF_CC.htm https://www.arrs.run/iaaf_country_codes.php
+
+Redirect 301 /marathon_rankings_all_time.php https://www.arrs.run/AllTime/AL_Mara.htm
+Redirect 301 /marathon_rankings_current_year.php https://www.arrs.run/CY_Mara.htm
+Redirect 301 /marathon_rankings_allcomers_records.php https://www.arrs.run/AC_Mara.htm
+Redirect 301 /marathon_rankings_national_records.php https://www.arrs.run/NR_Mara.htm
+Redirect 301 /marathon_rankings_previous_year.php https://www.arrs.run/PYRank/PY_Mara.htm
+Redirect 301 /marathon_rankings_single_age_records.php https://www.arrs.run/SA_Mara.htm
+
+Redirect 301 /national_records_1h_outdoor.php https://www.arrs.run/NR_O1Hr.htm
+Redirect 301 /national_records_2m_indoor.php https://www.arrs.run/NR_I2M.htm
+Redirect 301 /national_records_2m_outdoor.php https://www.arrs.run/NR_O2M.htm
+Redirect 301 /national_records_3k_indoor.php https://www.arrs.run/NR_I3K.htm
+Redirect 301 /national_records_3k_outdoor.php https://www.arrs.run/NR_O3K.htm
+Redirect 301 /national_records_4m.php https://www.arrs.run/NR_4M.htm
+Redirect 301 /national_records_5k.php https://www.arrs.run/NR_5K.htm
+Redirect 301 /national_records_5k_indoor.php https://www.arrs.run/NR_I5K.htm
+Redirect 301 /national_records_5k_outdoor.php https://www.arrs.run/NR_O5K.htm
+Redirect 301 /national_records_8k.php https://www.arrs.run/NR_8K.htm
+Redirect 301 /national_records_10k.php https://www.arrs.run/NR_10K.htm
+Redirect 301 /national_records_10k_outdoor.php https://www.arrs.run/NR_O10K.htm
+Redirect 301 /national_records_10m.php https://www.arrs.run/NR_10M.htm
+Redirect 301 /national_records_12k.php https://www.arrs.run/NR_12K.htm
+Redirect 301 /national_records_15k.php https://www.arrs.run/NR_15K.htm
+Redirect 301 /national_records_20k.php https://www.arrs.run/NR_20K.htm
+Redirect 301 /national_records_25k.php https://www.arrs.run/NR_25K.htm
+Redirect 301 /national_records_30k.php https://www.arrs.run/NR_30K.htm
+Redirect 301 /national_records_halfmarathon.php https://www.arrs.run/NR_HMar.htm
+Redirect 301 /national_records_marathon.php https://www.arrs.run/NR_Mara.htm
+Redirect 301 /NRec.htm https://www.arrs.run/national_records_english.php
+
+Redirect 301 /RaceComp.htm https://www.arrs.run/marathons_comparison.php
+Redirect 301 /RaceMembers.htm https://www.arrs.run/race_members.php
+Redirect 301 /Rules.htm https://www.arrs.run/rules.php
+
+Redirect 301 /TR_Mara.htm https://www.arrs.run/trivia_marathon.php
+Redirect 301 /TR_Road.htm https://www.arrs.run/trivia_road_racing.php
+Redirect 301 /TR_UMara.htm https://www.arrs.run/trivia_ultramarathon.php
+Redirect 301 /Trivia.htm https://www.arrs.run/trivia_distance_running.php
+
+Redirect 301 /WG_Mara_ENG.htm https://www.arrs.run/working_groups_marathons_english.php
+Redirect 301 /WG_Res_ENG.htm https://www.arrs.run/working_groups_results_english.php
+Redirect 301 /WG_UMar_ENG.htm https://www.arrs.run/working_groups_ultramarathons_english.php
