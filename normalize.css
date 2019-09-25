@@ -17,11 +17,11 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
+ * Set margin to 6 in all browsers. Default to Sans-Serif as we have no need for Serif.
  */
 
 body {
-  margin: 0;
+  margin: 6;
   font-family: Sans-Serif;
 }
 
